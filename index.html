@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Particle Physics Graduate Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .page-section.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" onclick="showSection('home')" class="text-2xl font-bold text-cyan-400">Your Name</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" onclick="showSection('about')" class="hover:text-cyan-400 transition-colors duration-300">About</a>
+                <a href="#" onclick="showSection('research')" class="hover:text-cyan-400 transition-colors duration-300">Research</a>
+                <a href="#" onclick="showSection('publications')" class="hover:text-cyan-400 transition-colors duration-300">Publications</a>
+                <a href="#" onclick="showSection('talks')" class="hover:text-cyan-400 transition-colors duration-300">Talks</a>
+                <a href="#" onclick="showSection('skills')" class="hover:text-cyan-400 transition-colors duration-300">Skills</a>
+                <a href="#" onclick="showSection('contact')" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#" onclick="showSection('about')" class="block py-2 hover:text-cyan-400">About</a>
+            <a href="#" onclick="showSection('research')" class="block py-2 hover:text-cyan-400">Research</a>
+            <a href="#" onclick="showSection('publications')" class="block py-2 hover:text-cyan-400">Publications</a>
+            <a href="#" onclick="showSection('talks')" class="block py-2 hover:text-cyan-400">Talks</a>
+            <a href="#" onclick="showSection('skills')" class="block py-2 hover:text-cyan-400">Skills</a>
+            <a href="#" onclick="showSection('contact')" class="block mt-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section (Home Page) -->
+        <section id="home-section" class="page-section flex flex-col md:flex-row items-center min-h-[80vh]">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Unveiling the Universe,</h1>
+                <h2 class="text-3xl md:text-5xl font-bold text-cyan-400 mb-6">One Particle at a Time.</h2>
+                <p class="text-lg text-gray-400 mb-8 max-w-xl mx-auto md:mx-0">
+                    I'm a graduate student in elementary particle physics, leveraging statistics and machine learning to explore the fundamental laws of nature.
+                </p>
+                <a href="#" onclick="showSection('research')" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 text-lg">
+                    Explore My Research
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Placeholder for a professional headshot or a relevant graphic -->
+                <img src="https://placehold.co/400x400/111827/7DD3FC?text=Your+Photo" alt="Your Name" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 border-cyan-500 shadow-lg">
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-section" class="page-section hidden py-20">
+            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-2/3 text-gray-300 leading-relaxed space-y-4">
+                    <p>
+                        Hello! I'm [Your Name], a passionate Ph.D. candidate at [Your University]. My research sits at the exciting intersection of high-energy particle physics, advanced statistical methods, and cutting-edge machine learning. I am driven by a deep curiosity about the fundamental constituents of our universe and the forces that govern them.
+                    </p>
+                    <p>
+                        My current work with the [Your Collaboration/Experiment, e.g., ATLAS, CMS] collaboration focuses on [briefly describe your research, e.g., searching for new physics beyond the Standard Model, precision measurements of the Higgs boson, etc.]. I specialize in developing and implementing novel algorithms to analyze vast datasets from particle collisions, aiming to extract subtle signals from overwhelming backgrounds.
+                    </p>
+                    <p>
+                        I earned my Bachelor's degree in Physics from [Your Undergraduate University], where I first became fascinated with the quantum world. When I'm not analyzing data or running simulations, I enjoy [Your Hobby 1], [Your Hobby 2], and contributing to open-source scientific software.
+                    </p>
+                </div>
+                 <div class="md:w-1/3">
+                    <div class="glassmorphism rounded-lg p-6">
+                        <h3 class="font-bold text-xl mb-4 text-white">Quick Facts</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><i data-lucide="microscope" class="w-5 h-5 mr-3 text-cyan-400"></i>Field: Particle Physics</li>
+                            <li class="flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-3 text-cyan-400"></i>Methods: Statistics & ML</li>
+                            <li class="flex items-center"><i data-lucide="graduation-cap" class="w-5 h-5 mr-3 text-cyan-400"></i>Institution: [Your University]</li>
+                            <li class="flex items-center"><i data-lucide="github" class="w-5 h-5 mr-3 text-cyan-400"></i><a href="#" class="hover:underline">GitHub Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research-section" class="page-section hidden py-20">
+            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Research Highlights</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Research Item 1 -->
+                <div class="glassmorphism rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1A202C/7DD3FC?text=Project+Graphic" alt="Research Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Machine Learning for Jet Tagging</h3>
+                        <p class="text-gray-400 mb-4">
+                            Developing deep learning models (Graph Neural Networks) to identify the origin of particle jets, significantly improving the efficiency of new physics searches.
+                        </p>
+                        <a href="#" class="text-cyan-400 hover:underline font-semibold">Learn More &rarr;</a>
+                    </div>
+                </div>
+                <!-- Research Item 2 -->
+                <div class="glassmorphism rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1A202C/7DD3FC?text=Project+Graphic" alt="Research Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Statistical Inference with Profile Likelihood</h3>
+                        <p class="text-gray-400 mb-4">
+                            Applying advanced statistical techniques to set confidence limits on the properties of the Higgs boson, using data from the Large Hadron Collider.
+                        </p>
+                        <a href="#" class="text-cyan-400 hover:underline font-semibold">View Analysis &rarr;</a>
+                    </div>
+                </div>
+                <!-- Research Item 3 -->
+                <div class="glassmorphism rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1A202C/7DD3FC?text=Project+Graphic" alt="Research Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Simulation & Data Analysis Pipeline</h3>
+                        <p class="text-gray-400 mb-4">
+                            Building and maintaining a scalable data analysis pipeline for processing petabytes of Monte Carlo simulation data for the [Your Experiment] experiment.
+                        </p>
+                        <a href="#" class="text-cyan-400 hover:underline font-semibold">See on GitHub &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications-section" class="page-section hidden py-20">
+            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Publications</h2>
+            <div class="space-y-8">
+                <!-- Publication Item 1 -->
+                <div class="p-6 rounded-lg glassmorphism">
+                    <p class="text-gray-400 text-sm">Journal of High Energy Physics | 2024</p>
+                    <h3 class="text-lg font-bold text-white mt-1">
+                        <a href="#" class="hover:text-cyan-400 transition-colors">Search for supersymmetry in final states with jets, missing transverse momentum, and isolated leptons...</a>
+                    </h3>
+                    <p class="text-gray-300 mt-2">The [Your Collaboration] Collaboration (Author)</p>
+                </div>
+                <!-- Publication Item 2 -->
+                <div class="p-6 rounded-lg glassmorphism">
+                    <p class="text-gray-400 text-sm">Physical Review D | 2023</p>
+                    <h3 class="text-lg font-bold text-white mt-1">
+                        <a href="#" class="hover:text-cyan-400 transition-colors">A deep learning approach to quark-gluon discrimination</a>
+                    </h3>
+                    <p class="text-gray-300 mt-2">[Your Name], [Co-author Name], et al.</p>
+                </div>
+                 <!-- Publication Item 3 -->
+                <div class="p-6 rounded-lg glassmorphism">
+                    <p class="text-gray-400 text-sm">Conference Proceedings - CHEP | 2022</p>
+                    <h3 class="text-lg font-bold text-white mt-1">
+                        <a href="#" class="hover:text-cyan-400 transition-colors">Accelerating particle track reconstruction with Graph Neural Networks on FPGAs</a>
+                    </h3>
+                    <p class="text-gray-300 mt-2">[Your Name], [Co-author Name], et al.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Talks Section -->
+        <section id="talks-section" class="page-section hidden py-20">
+            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Invited Talks & Presentations</h2>
+            <div class="space-y-8">
+                <!-- Talk Item 1 -->
+                <div class="p-6 rounded-lg glassmorphism">
+                    <p class="text-gray-400 text-sm">Physics Colloquium, [Inviting University] | 2024</p>
+                    <h3 class="text-lg font-bold text-white mt-1">
+                        Probing New Physics with Machine Learning at the LHC
+                    </h3>
+                    <p class="text-gray-300 mt-2">Invited Speaker</p>
+                </div>
+                <!-- Talk Item 2 -->
+                <div class="p-6 rounded-lg glassmorphism">
+                    <p class="text-gray-400 text-sm">Connecting The Dots (CTD) Workshop | 2023</p>
+                    <h3 class="text-lg font-bold text-white mt-1">
+                        Graph Neural Networks for Particle Tracking in High-Luminosity Environments
+                    </h3>
+                    <p class="text-gray-300 mt-2">Contributed Talk</p>
+                </div>
+                 <!-- Talk Item 3 -->
+                <div class="p-6 rounded-lg glassmorphism">
+                    <p class="text-gray-400 text-sm">[Your University] Graduate Research Symposium | 2022</p>
+                    <h3 class="text-lg font-bold text-white mt-1">
+                        A Novel Approach to Jet Substructure Tagging using Attention-based Networks
+                    </h3>
+                    <p class="text-gray-300 mt-2">Poster Presentation (Best Poster Award)</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills-section" class="page-section hidden py-20">
+            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4 glassmorphism rounded-lg">
+                    <i data-lucide="python" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
+                    <h3 class="font-semibold text-lg">Python</h3>
+                    <p class="text-sm text-gray-400">NumPy, SciPy, Pandas, Matplotlib</p>
+                </div>
+                <div class="p-4 glassmorphism rounded-lg">
+                    <i data-lucide="brain-circuit" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
+                    <h3 class="font-semibold text-lg">Machine Learning</h3>
+                    <p class="text-sm text-gray-400">PyTorch, TensorFlow, Scikit-learn</p>
+                </div>
+                <div class="p-4 glassmorphism rounded-lg">
+                    <i data-lucide="braces" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
+                    <h3 class="font-semibold text-lg">C++ & ROOT</h3>
+                    <p class="text-sm text-gray-400">High-performance data analysis</p>
+                </div>
+                <div class="p-4 glassmorphism rounded-lg">
+                    <i data-lucide="database" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
+                    <h3 class="font-semibold text-lg">Data Tools</h3>
+                    <p class="text-sm text-gray-400">SQL, Docker, Git, HPC/Slurm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="page-section hidden py-20 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                I'm always open to discussing research, collaborating on projects, or connecting with fellow physicists and data scientists. Feel free to reach out!
+            </p>
+            <div class="flex justify-center space-x-6">
+                 <a href="mailto:your.email@university.edu" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 flex items-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i> Email Me
+                </a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400 p-3 rounded-full glassmorphism transition-colors duration-300">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400 p-3 rounded-full glassmorphism transition-colors duration-300">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400 p-3 rounded-full glassmorphism transition-colors duration-300">
+                    <i data-lucide="graduation-cap" class="w-6 h-6"></i> <!-- For Google Scholar, etc. -->
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // --- Page Navigation Logic ---
+        function showSection(sectionId) {
+            // Hide all page sections
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show the requested section
+            const activeSection = document.getElementById(sectionId + '-section');
+            if (activeSection) {
+                activeSection.classList.remove('hidden');
+            } else {
+                // If section not found, default to home
+                document.getElementById('home-section').classList.remove('hidden');
+            }
+
+            // Close the mobile menu if it's open
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.add('hidden');
+            
+            // Scroll to the top of the page for a clean transition
+            window.scrollTo(0, 0);
+        }
+
+        // Show the home section by default when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
