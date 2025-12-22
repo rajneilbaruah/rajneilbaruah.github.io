@@ -1,4 +1,79 @@
-<section id="about">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Particle Physics Graduate Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .page-section.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" onclick="showSection('home')" class="text-2xl font-bold text-cyan-400">Your Name</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" onclick="showSection('about')" class="hover:text-cyan-400 transition-colors duration-300">About</a>
+                <a href="#" onclick="showSection('research')" class="hover:text-cyan-400 transition-colors duration-300">Research</a>
+                <a href="#" onclick="showSection('publications')" class="hover:text-cyan-400 transition-colors duration-300">Publications</a>
+                <a href="#" onclick="showSection('talks')" class="hover:text-cyan-400 transition-colors duration-300">Talks</a>
+                <a href="#" onclick="showSection('skills')" class="hover:text-cyan-400 transition-colors duration-300">Skills</a>
+                <a href="#" onclick="showSection('contact')" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#" onclick="showSection('about')" class="block py-2 hover:text-cyan-400">About</a>
+            <a href="#" onclick="showSection('research')" class="block py-2 hover:text-cyan-400">Research</a>
+            <a href="#" onclick="showSection('publications')" class="block py-2 hover:text-cyan-400">Publications</a>
+            <a href="#" onclick="showSection('talks')" class="block py-2 hover:text-cyan-400">Talks</a>
+            <a href="#" onclick="showSection('skills')" class="block py-2 hover:text-cyan-400">Skills</a>
+            <a href="#" onclick="showSection('contact')" class="block mt-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section (Home Page) -->
+        <section id="home-section" class="page-section flex flex-col md:flex-row items-center min-h-[80vh]">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Unveiling the Universe,</h1>
+                <h2 class="text-3xl md:text-5xl font-bold text-cyan-400 mb-6">One Particle at a Time.</h2>
+                <p class="text-lg text-gray-400 mb-8 max-w-xl mx-auto md:mx-0">
+                    I'm a graduate student in elementary particle physics, leveraging statistics and machine learning to explore the fundamental laws of nature.
+                </p>
+                <a href="#" onclick="showSection('research')" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 text-lg">
+                    Explore My Research
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Placeholder for a professional headshot or a relevant graphic -->
+                <img src="https://placehold.co/400x400/111827/7DD3FC?text=Your+Photo" alt="Your Name" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 border-cyan-500 shadow-lg">
+            </div>
+       <section id="about">
   <h2 class="text-3xl font-bold mb-4">About Me</h2>
   <p>Rajneil Baruah is a Ph.D. scholar in Particle Physics at Bennett University (2022–present):contentReference[oaicite:0]{index=0} and a Junior Research Fellow at Bangabasi Evening College, University of Calcutta:contentReference[oaicite:1]{index=1}. His PhD project “A ‘Deep’ Analysis Framework for Physics Beyond the Standard Model” (DST-CRG/2022/003208):contentReference[oaicite:2]{index=2} reflects his focus on using deep learning and advanced statistical methods to search for new physics beyond the Standard Model. Rajneil’s work bridges theory and data, applying cutting-edge machine learning (ML) techniques to accelerate inference in high-energy physics and reveal hidden structure in complex experimental data.</p>
   <p>With a strong background in theoretical physics (M.Sc. 2020, University of Delhi):contentReference[oaicite:3]{index=3} and expertise in computational methods, Rajneil has developed new approaches in simulation-based inference and generative modeling:contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}. His research interests include normalizing flows, graph neural networks (GNNs), convolutional neural networks (CNNs), and emerging AI methods like diffusion models. He aims to make AI tools more physics-informed and accessible, optimizing algorithms for efficiency and interpretability to tackle the big challenges of particle physics:contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}.</p>
@@ -50,3 +125,55 @@
   <h2 class="text-3xl font-bold mb-4">Contact</h2>
   <p>Connect with me via <a href="https://orcid.org/0000-0001-9792-5496" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">ORCID</a> and <a href="https://scholar.google.com/citations?user=YZDUItYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Google Scholar</a>.</p>
 </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // --- Page Navigation Logic ---
+        function showSection(sectionId) {
+            // Hide all page sections
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show the requested section
+            const activeSection = document.getElementById(sectionId + '-section');
+            if (activeSection) {
+                activeSection.classList.remove('hidden');
+            } else {
+                // If section not found, default to home
+                document.getElementById('home-section').classList.remove('hidden');
+            }
+
+            // Close the mobile menu if it's open
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.add('hidden');
+            
+            // Scroll to the top of the page for a clean transition
+            window.scrollTo(0, 0);
+        }
+
+        // Show the home section by default when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
