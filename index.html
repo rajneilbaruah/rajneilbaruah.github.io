@@ -1,138 +1,126 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rajneil Baruah | Particle Physics & ML</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
     body { font-family: 'Inter', sans-serif; }
-    .glassmorphism {
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.15);
-    }
-    .page-section.hidden { display: none; }
+
+    /* HARD guarantee: only active section is visible */
+    .page-section { display: none; }
+    .page-section.active { display: block; }
   </style>
 </head>
 
 <body class="bg-gray-900 text-gray-200">
 
 <!-- ================= NAVBAR ================= -->
-<header class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur">
+<header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur">
   <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="#" onclick="showSection('home')" class="text-2xl font-bold text-cyan-400">
+    <span onclick="showSection('home')" class="text-2xl font-bold text-cyan-400 cursor-pointer">
       Rajneil Baruah
-    </a>
+    </span>
     <div class="hidden md:flex space-x-6">
-      <a href="#" onclick="showSection('about')" class="hover:text-cyan-400">About</a>
-      <a href="#" onclick="showSection('research')" class="hover:text-cyan-400">Research</a>
-      <a href="#" onclick="showSection('publications')" class="hover:text-cyan-400">Publications</a>
-      <a href="#" onclick="showSection('talks')" class="hover:text-cyan-400">Talks</a>
-      <a href="#" onclick="showSection('skills')" class="hover:text-cyan-400">Skills</a>
-      <a href="#" onclick="showSection('contact')" class="bg-cyan-500 px-4 py-2 rounded-full text-white">
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('research')">Research</button>
+      <button onclick="showSection('publications')">Publications</button>
+      <button onclick="showSection('talks')">Talks</button>
+      <button onclick="showSection('skills')">Skills</button>
+      <button onclick="showSection('contact')" class="bg-cyan-500 px-4 py-2 rounded-full">
         Contact
-      </a>
+      </button>
     </div>
   </nav>
 </header>
 
 <!-- ================= MAIN ================= -->
-<main class="container mx-auto px-6 py-12">
+<main class="container mx-auto px-6 py-16 max-w-4xl">
 
-<!-- ========== HOME ========== -->
-<section id="home-section" class="page-section flex flex-col md:flex-row items-center min-h-[80vh]">
-  <div class="md:w-1/2">
-    <h1 class="text-5xl font-bold mb-4">Unveiling the Universe,</h1>
-    <h2 class="text-4xl text-cyan-400 font-bold mb-6">One Particle at a Time.</h2>
-    <p class="text-gray-400 mb-8">
-      Ph.D. Scholar in Particle Physics working at the intersection of
-      Beyond the Standard Model phenomenology, statistical inference,
-      and machine learning.
-    </p>
-    <button onclick="showSection('research')" class="bg-cyan-500 px-6 py-3 rounded-full text-white">
-      Explore My Research
-    </button>
-  </div>
-  <div class="md:w-1/2 flex justify-center">
-    <img src="https://placehold.co/400x400/111827/7DD3FC?text=Your+Photo"
-         class="rounded-full border-4 border-cyan-500"/>
+<!-- HOME -->
+<section id="home" class="page-section active">
+  <div class="flex flex-col md:flex-row items-center gap-10">
+    <div class="md:w-1/2">
+      <h1 class="text-5xl font-bold mb-4">Unveiling the Universe,</h1>
+      <h2 class="text-4xl font-bold text-cyan-400 mb-6">One Particle at a Time.</h2>
+      <p class="text-gray-400 mb-8">
+        Ph.D. scholar in Particle Physics working on Beyond the Standard Model
+        phenomenology, statistical inference, and machine learning.
+      </p>
+      <button onclick="showSection('research')" class="bg-cyan-500 px-6 py-3 rounded-full text-white">
+        Explore My Research
+      </button>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <img src="https://placehold.co/300x300/111827/7DD3FC?text=Your+Photo"
+           class="rounded-full border-4 border-cyan-500">
+    </div>
   </div>
 </section>
 
-<!-- ========== ABOUT ========== -->
-<section id="about-section" class="page-section hidden py-20">
+<!-- ABOUT -->
+<section id="about" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">About Me</h2>
-  <p class="text-gray-300 mb-4">
-    I am a Ph.D. scholar in Particle Physics at Bennett University and a
-    Junior Research Fellow at Bangabasi Evening College, University of Calcutta.
-    My research focuses on developing machine-learning-driven statistical
-    frameworks to probe complex Beyond the Standard Model theories.
+  <p class="mb-4">
+    I am a Ph.D. scholar in Particle Physics at Bennett University and a Junior
+    Research Fellow at Bangabasi Evening College, University of Calcutta.
   </p>
-  <p class="text-gray-300">
-    My work spans simulation-based inference, normalizing flows, jet tagging,
-    and efficient deep learning architectures for collider phenomenology.
+  <p>
+    My research focuses on simulation-based inference, normalizing flows,
+    and machine-learning-driven collider phenomenology.
   </p>
 </section>
 
-<!-- ========== RESEARCH ========== -->
-<section id="research-section" class="page-section hidden py-20">
+<!-- RESEARCH -->
+<section id="research" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Research</h2>
-  <ul class="list-disc ml-6 space-y-3 text-gray-300">
-    <li>Simulation-Based Inference using Normalizing Flows and Nested Sampling</li>
-    <li>Machine-learning-based jet tagging using GNNs and lightweight CNNs</li>
-    <li>Global parameter inference in BSM models</li>
-    <li>Generative models and diffusion methods for scientific inference</li>
+  <ul class="list-disc ml-6 space-y-2">
+    <li>Normalizing Flows + Nested Sampling for BSM inference</li>
+    <li>Jet tagging using GNNs and lightweight CNNs</li>
+    <li>Simulation-based inference and generative models</li>
+    <li>Efficient ML for collider phenomenology</li>
   </ul>
 </section>
 
-<!-- ========== PUBLICATIONS ========== -->
-<section id="publications-section" class="page-section hidden py-20">
+<!-- PUBLICATIONS -->
+<section id="publications" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Publications</h2>
-  <ul class="space-y-4 text-gray-300">
-    <li>
-      <b>Eur. Phys. J. ST (2024)</b><br>
-      Probing intractable BSM parameter spaces armed with machine learning
-    </li>
-    <li>
-      <b>Phys. Rev. D (2025)</b><br>
-      Probing sub-TeV Higgsinos aided by ML-based top taggers
-    </li>
-    <li>
-      <b>Eur. Phys. J. C (2025)</b><br>
-      Normalizing-flow-assisted nested sampling on Type-II Seesaw
-    </li>
+  <ul class="space-y-4">
+    <li><b>Eur. Phys. J. ST (2024)</b> — ML-assisted BSM parameter inference</li>
+    <li><b>Phys. Rev. D (2025)</b> — Higgsinos with ML-based top tagging</li>
+    <li><b>Eur. Phys. J. C (2025)</b> — NF-assisted Nested Sampling</li>
   </ul>
 </section>
 
-<!-- ========== TALKS ========== -->
-<section id="talks-section" class="page-section hidden py-20">
+<!-- TALKS -->
+<section id="talks" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Talks</h2>
-  <ul class="list-disc ml-6 text-gray-300 space-y-2">
+  <ul class="list-disc ml-6">
     <li>IIT Kanpur — Efficient ML for Physics (2025)</li>
     <li>PHOENIX 2025 — Bayesian Model Comparison</li>
-    <li>DAE-BRNS HEP Symposium 2024 — ML-Enhanced Nested Sampling</li>
+    <li>DAE-BRNS HEP Symposium 2024</li>
   </ul>
 </section>
 
-<!-- ========== SKILLS ========== -->
-<section id="skills-section" class="page-section hidden py-20">
+<!-- SKILLS -->
+<section id="skills" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Skills</h2>
-  <p class="text-gray-300">
+  <p>
     Python, PyTorch, TensorFlow, ROOT, MadGraph, Delphes, Pythia,
-    Normalizing Flows, GNNs, CNNs, Transformers, HPC, Slurm
+    Normalizing Flows, GNNs, CNNs, Transformers, HPC
   </p>
 </section>
 
-<!-- ========== CONTACT ========== -->
-<section id="contact-section" class="page-section hidden py-20 text-center">
+<!-- CONTACT -->
+<section id="contact" class="page-section text-center">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Contact</h2>
-  <p class="mb-6">rajneilb.physics@gmail.com</p>
-  <div class="flex justify-center space-x-6">
+  <p class="mb-4">rajneilb.physics@gmail.com</p>
+  <div class="space-x-6">
     <a href="https://orcid.org/0000-0001-9792-5496" target="_blank">ORCID</a>
     <a href="https://scholar.google.com/citations?user=YZDUItYAAAAJ" target="_blank">
       Google Scholar
@@ -142,26 +130,14 @@
 
 </main>
 
-<!-- ================= FOOTER ================= -->
-<footer class="border-t border-gray-800 py-6 text-center text-gray-500">
-  © 2025 Rajneil Baruah
-</footer>
-
 <!-- ================= SCRIPT ================= -->
 <script>
-  lucide.createIcons();
-
   function showSection(id) {
     document.querySelectorAll('.page-section')
-      .forEach(s => s.classList.add('hidden'));
-    document.getElementById(id + '-section')
-      .classList.remove('hidden');
+      .forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
     window.scrollTo(0,0);
   }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    showSection('home');
-  });
 </script>
 
 </body>
