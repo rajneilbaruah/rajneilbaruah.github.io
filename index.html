@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rajneil Baruah | Particle Physics & ML</title>
+  <title>Rajneil Baruah | Particle Physics & Machine Learning</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
     body { font-family: 'Inter', sans-serif; }
-
-    /* HARD guarantee: only active section is visible */
     .page-section { display: none; }
     .page-section.active { display: block; }
   </style>
@@ -42,87 +39,156 @@
 <!-- ================= MAIN ================= -->
 <main class="container mx-auto px-6 py-16 max-w-4xl">
 
-<!-- HOME -->
+<!-- ================= HOME ================= -->
 <section id="home" class="page-section active">
-  <div class="flex flex-col md:flex-row items-center gap-10">
-    <div class="md:w-1/2">
-      <h1 class="text-5xl font-bold mb-4">Unveiling the Universe,</h1>
-      <h2 class="text-4xl font-bold text-cyan-400 mb-6">One Particle at a Time.</h2>
-      <p class="text-gray-400 mb-8">
-        Ph.D. scholar in Particle Physics working on Beyond the Standard Model
-        phenomenology, statistical inference, and machine learning.
-      </p>
-      <button onclick="showSection('research')" class="bg-cyan-500 px-6 py-3 rounded-full text-white">
-        Explore My Research
-      </button>
-    </div>
-    <div class="md:w-1/2 flex justify-center">
-      <img src="https://placehold.co/300x300/111827/7DD3FC?text=Your+Photo"
-           class="rounded-full border-4 border-cyan-500">
-    </div>
-  </div>
+  <h1 class="text-5xl font-bold mb-4">Unveiling the Universe,</h1>
+  <h2 class="text-4xl font-bold text-cyan-400 mb-6">One Particle at a Time.</h2>
+  <p class="text-gray-400 mb-8">
+    Ph.D. Scholar in Particle Physics working at the intersection of
+    Beyond the Standard Model phenomenology, statistical inference,
+    and machine learning.
+  </p>
+  <button onclick="showSection('research')" class="bg-cyan-500 px-6 py-3 rounded-full text-white">
+    Explore My Research
+  </button>
 </section>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 <section id="about" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">About Me</h2>
+
   <p class="mb-4">
-    I am a Ph.D. scholar in Particle Physics at Bennett University and a Junior
-    Research Fellow at Bangabasi Evening College, University of Calcutta.
+    I am a Ph.D. scholar in Physics at <b>Bennett University</b> (2022–present),
+    advised by <b>Dr. Subhadeep Mondal</b>. I am also a Junior Research Fellow
+    at <b>Bangabasi Evening College, University of Calcutta</b>, working under the
+    DST–SERB CRG project
+    <i>“A Deep Analysis Framework for Physics Beyond the Standard Model”</i>
+    (CRG/2022/003208).
   </p>
+
+  <p class="mb-4">
+    My research focuses on the phenomenology of Beyond the Standard Model (BSM)
+    scenarios, including non-minimal Higgs sectors, Seesaw models, and
+    R-parity-violating supersymmetry. A central theme of my work is developing
+    statistically robust and computationally efficient tools to constrain
+    high-dimensional BSM parameter spaces using collider data.
+  </p>
+
   <p>
-    My research focuses on simulation-based inference, normalizing flows,
-    and machine-learning-driven collider phenomenology.
+    I received my M.Sc. in Physics from the University of Delhi (2020), where my
+    dissertation focused on non-perturbative methods in quantum field theory,
+    and a B.Sc. (Hons.) in Physics from the University of Delhi (2018).
   </p>
 </section>
 
-<!-- RESEARCH -->
+<!-- ================= RESEARCH ================= -->
 <section id="research" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Research</h2>
-  <ul class="list-disc ml-6 space-y-2">
-    <li>Normalizing Flows + Nested Sampling for BSM inference</li>
-    <li>Jet tagging using GNNs and lightweight CNNs</li>
-    <li>Simulation-based inference and generative models</li>
-    <li>Efficient ML for collider phenomenology</li>
+
+  <ul class="list-disc ml-6 space-y-3">
+    <li>
+      <b>Simulation-Based Inference & Normalizing Flows:</b>
+      Developing hybrid inference frameworks that combine normalizing flows
+      with Nested Sampling and MCMC to efficiently explore multi-modal,
+      high-dimensional BSM parameter spaces.
+    </li>
+    <li>
+      <b>Machine Learning for Jet Tagging:</b>
+      Designing and comparing GNN-, CNN-, and attention-based jet taggers to
+      identify boosted objects at hadron colliders, with a focus on lightweight
+      and computationally efficient architectures.
+    </li>
+    <li>
+      <b>Global Fits of BSM Models:</b>
+      Applying ML-assisted inference to constrain models such as Type-II Seesaw
+      and RPV-MSSM using collider observables.
+    </li>
+    <li>
+      <b>Generative & Amortized Inference:</b>
+      Exploring likelihood-weighted normalizing flows, diffusion models, and
+      other generative approaches for rapid posterior estimation.
+    </li>
   </ul>
 </section>
 
-<!-- PUBLICATIONS -->
+<!-- ================= PUBLICATIONS ================= -->
 <section id="publications" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Publications</h2>
-  <ul class="space-y-4">
-    <li><b>Eur. Phys. J. ST (2024)</b> — ML-assisted BSM parameter inference</li>
-    <li><b>Phys. Rev. D (2025)</b> — Higgsinos with ML-based top tagging</li>
-    <li><b>Eur. Phys. J. C (2025)</b> — NF-assisted Nested Sampling</li>
+
+  <h3 class="text-xl font-semibold mb-2">Journal Articles</h3>
+  <ul class="space-y-3 mb-6">
+    <li>
+      <b>Eur. Phys. J. ST (2024)</b><br>
+      Probing intractable beyond-standard-model parameter spaces armed with
+      machine learning
+    </li>
+    <li>
+      <b>Phys. Rev. D (2025)</b><br>
+      Probing sub-TeV Higgsinos aided by a machine-learning-based top tagger
+      in trilinear RPV SUSY
+    </li>
+    <li>
+      <b>Eur. Phys. J. C (2025)</b><br>
+      Normalizing flow-assisted nested sampling on the Type-II Seesaw model
+    </li>
+  </ul>
+
+  <h3 class="text-xl font-semibold mb-2">Preprints</h3>
+  <ul class="space-y-2">
+    <li>
+      Amortized inference of multi-modal posteriors using likelihood-weighted
+      normalizing flows (arXiv:2512.04954)
+    </li>
+    <li>
+      CNN on “top”: In search of scalable & lightweight image-based jet taggers
+      (arXiv:2512.05031)
+    </li>
   </ul>
 </section>
 
-<!-- TALKS -->
+<!-- ================= TALKS ================= -->
 <section id="talks" class="page-section">
-  <h2 class="text-3xl font-bold text-cyan-400 mb-6">Talks</h2>
-  <ul class="list-disc ml-6">
-    <li>IIT Kanpur — Efficient ML for Physics (2025)</li>
-    <li>PHOENIX 2025 — Bayesian Model Comparison</li>
-    <li>DAE-BRNS HEP Symposium 2024</li>
+  <h2 class="text-3xl font-bold text-cyan-400 mb-6">Talks & Presentations</h2>
+
+  <ul class="list-disc ml-6 space-y-2">
+    <li>
+      Efficient Machine Learning for Physics: Solving Inverse Problems and
+      Identifying Particles — IIT Kanpur (2025)
+    </li>
+    <li>
+      Bayesian Model Comparison: The Battle Royale of New Physics Models —
+      PHOENIX 2025, IIT Hyderabad
+    </li>
+    <li>
+      Boosting Beyond Standard Model Searches using ML-Enhanced Nested Sampling —
+      XXVI DAE-BRNS HEP Symposium (2024)
+    </li>
   </ul>
 </section>
 
-<!-- SKILLS -->
+<!-- ================= SKILLS ================= -->
 <section id="skills" class="page-section">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Skills</h2>
+
   <p>
-    Python, PyTorch, TensorFlow, ROOT, MadGraph, Delphes, Pythia,
-    Normalizing Flows, GNNs, CNNs, Transformers, HPC
+    <b>Programming:</b> Python, C/C++, Fortran, Mathematica<br>
+    <b>ML:</b> PyTorch, TensorFlow, Normalizing Flows, CNNs, GNNs, Transformers<br>
+    <b>HEP Tools:</b> SARAH, SPheno, MadGraph, Delphes, Pythia, ROOT<br>
+    <b>Other:</b> Git, Linux, HPC/Slurm
   </p>
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="page-section text-center">
   <h2 class="text-3xl font-bold text-cyan-400 mb-6">Contact</h2>
-  <p class="mb-4">rajneilb.physics@gmail.com</p>
+
+  <p class="mb-4">📧 rajneilb.physics@gmail.com</p>
+
   <div class="space-x-6">
-    <a href="https://orcid.org/0000-0001-9792-5496" target="_blank">ORCID</a>
-    <a href="https://scholar.google.com/citations?user=YZDUItYAAAAJ" target="_blank">
+    <a href="https://orcid.org/0000-0001-9792-5496" target="_blank" class="text-cyan-400">
+      ORCID
+    </a>
+    <a href="https://scholar.google.com/citations?user=YZDUItYAAAAJ" target="_blank" class="text-cyan-400">
       Google Scholar
     </a>
   </div>
