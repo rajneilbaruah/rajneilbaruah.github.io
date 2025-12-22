@@ -1,308 +1,52 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Particle Physics Graduate Student</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .section-title {
-            border-bottom: 2px solid;
-        }
-        .glassmorphism {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .page-section.hidden {
-            display: none;
-        }
-    </style>
-</head>
-<body class="bg-gray-900 text-gray-200">
+<section id="about">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+  <p>Rajneil Baruah is a Ph.D. scholar in Particle Physics at Bennett University (2022–present):contentReference[oaicite:0]{index=0} and a Junior Research Fellow at Bangabasi Evening College, University of Calcutta:contentReference[oaicite:1]{index=1}. His PhD project “A ‘Deep’ Analysis Framework for Physics Beyond the Standard Model” (DST-CRG/2022/003208):contentReference[oaicite:2]{index=2} reflects his focus on using deep learning and advanced statistical methods to search for new physics beyond the Standard Model. Rajneil’s work bridges theory and data, applying cutting-edge machine learning (ML) techniques to accelerate inference in high-energy physics and reveal hidden structure in complex experimental data.</p>
+  <p>With a strong background in theoretical physics (M.Sc. 2020, University of Delhi):contentReference[oaicite:3]{index=3} and expertise in computational methods, Rajneil has developed new approaches in simulation-based inference and generative modeling:contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}. His research interests include normalizing flows, graph neural networks (GNNs), convolutional neural networks (CNNs), and emerging AI methods like diffusion models. He aims to make AI tools more physics-informed and accessible, optimizing algorithms for efficiency and interpretability to tackle the big challenges of particle physics:contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}.</p>
+</section>
 
-    <!-- Header & Navigation -->
-    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" onclick="showSection('home')" class="text-2xl font-bold text-cyan-400">Your Name</a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="#" onclick="showSection('about')" class="hover:text-cyan-400 transition-colors duration-300">About</a>
-                <a href="#" onclick="showSection('research')" class="hover:text-cyan-400 transition-colors duration-300">Research</a>
-                <a href="#" onclick="showSection('publications')" class="hover:text-cyan-400 transition-colors duration-300">Publications</a>
-                <a href="#" onclick="showSection('talks')" class="hover:text-cyan-400 transition-colors duration-300">Talks</a>
-                <a href="#" onclick="showSection('skills')" class="hover:text-cyan-400 transition-colors duration-300">Skills</a>
-                <a href="#" onclick="showSection('contact')" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">Contact</a>
-            </div>
-            <button id="mobile-menu-button" class="md:hidden">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#" onclick="showSection('about')" class="block py-2 hover:text-cyan-400">About</a>
-            <a href="#" onclick="showSection('research')" class="block py-2 hover:text-cyan-400">Research</a>
-            <a href="#" onclick="showSection('publications')" class="block py-2 hover:text-cyan-400">Publications</a>
-            <a href="#" onclick="showSection('talks')" class="block py-2 hover:text-cyan-400">Talks</a>
-            <a href="#" onclick="showSection('skills')" class="block py-2 hover:text-cyan-400">Skills</a>
-            <a href="#" onclick="showSection('contact')" class="block mt-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full">Contact</a>
-        </div>
-    </header>
+<section id="research">
+  <h2 class="text-3xl font-bold mb-4">Research</h2>
+  <p>Rajneil’s research focuses on developing and applying modern machine learning methods to solve key challenges in high-energy physics. He works on simulation-based inference, where complex models can be simulated but likelihoods are intractable:contentReference[oaicite:8]{index=8}. He has investigated hybrid approaches that combine neural networks (e.g. normalizing flows) with traditional samplers like Nested Sampling to accelerate the exploration of multi-modal parameter spaces:contentReference[oaicite:9]{index=9}:contentReference[oaicite:10]{index=10}. This enables rapid inference of model parameters in beyond-Standard-Model scenarios, such as studies of neutrino mass models (Type-II Seesaw).</p>
+  <ul class="list-disc ml-5">
+    <li><strong>Probabilistic Inference and Normalizing Flows:</strong> Developing simulation-based inference tools by combining machine-learning models (like normalizing flows) with sampling algorithms to efficiently estimate multi-modal posteriors:contentReference[oaicite:11]{index=11}. This approach has shown promise for constraining complex BSM parameter spaces more rapidly than traditional methods.</li>
+    <li><strong>Deep Learning for Particle Identification:</strong> Applying graph neural networks and convolutional neural networks to classify particle collision data. For example, Rajneil built a GNN-based top-quark tagger to improve signal identification in searches for light supersymmetric Higgsinos:contentReference[oaicite:12]{index=12}. He also explores lightweight CNN architectures for jet tagging, balancing performance and computational efficiency:contentReference[oaicite:13]{index=13}.</li>
+    <li><strong>Generative and Diffusion Models:</strong> Exploring generative algorithms (VAEs, GANs, diffusion models) for physics applications. This includes using diffusion models for difficult inference problems:contentReference[oaicite:14]{index=14}, and designing physics-informed generative networks that respect symmetries and conservation laws. These models can serve as fast surrogate simulators or as tools for anomaly detection in large datasets:contentReference[oaicite:15]{index=15}.</li>
+    <li><strong>Physics-Informed Computing:</strong> Incorporating domain knowledge into ML architectures, such as enforcing physical symmetries in deep networks. This work aims to create interpretable, efficient models (e.g. Kolmogorov–Arnold networks) and to build a unified framework for global fits of BSM theories using all available experimental constraints:contentReference[oaicite:16]{index=16}:contentReference[oaicite:17]{index=17}.</li>
+  </ul>
+</section>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
+<section id="publications">
+  <h2 class="text-3xl font-bold mb-4">Publications</h2>
+  <h3 class="text-2xl font-semibold mt-4 mb-2">Journal Articles</h3>
+  <ul class="list-decimal ml-5">
+    <li>Baruah, R., Mondal, S., Patra, S.K., Roy, S., "Probing intractable beyond-standard-model parameter spaces armed with machine learning", <em>Eur. Phys. J. Spec. Top.</em> 233 (2024) 2597–2618. DOI:10.1140/epjs/s11734-024-01236-w. (arXiv:2404.02698)</li>
+    <li>Baruah, R., Choudhury, A., Ghosh, K., Mondal, S., Sahu, R., "Probing sub-TeV Higgsinos aided by a machine-learning-based top tagger in the context of trilinear R-parity violating SUSY", <em>Phys. Rev. D</em> 111 (2025) 095004. DOI:10.1103/PhysRevD.111.095004. (arXiv:2412.11862)</li>
+    <li>Baruah, R., Mondal, S., Patra, S.K., Roy, S., "Normalizing flow-assisted nested sampling on Type-II Seesaw model", <em>Eur. Phys. J. C</em> 85 (2025) 816. DOI:10.1140/epjc/s10052-025-14502-5. (arXiv:2501.16432)</li>
+  </ul>
+  <h3 class="text-2xl font-semibold mt-4 mb-2">Conference Proceedings</h3>
+  <ul class="list-decimal ml-5">
+    <li>Baruah, R., Choudhury, A., Ghosh, K., Mondal, S., Sahu, R., "Probing Sub-TeV Higgsinos in a Trilinear RPV SUSY Scenario using GNN-based Boosted Top Tagger", in <em>Proceedings of the XXVI DAE-BRNS High Energy Physics Symposium 2024</em>, Varanasi, India, December 19–23, 2024 (L. Singh et al., eds.), 2025.</li>
+    <li>Baruah, R., Mondal, S., Patra, S.K., Roy, S., "Boosting Beyond Standard Model Searches: ML-Enhanced Nested-Sampling for Rapid Parameter Estimation", in <em>Proceedings of the XXVI DAE-BRNS High Energy Physics Symposium 2024</em>, Varanasi, India, December 19–23, 2024 (L. Singh et al., eds.), 2025.</li>
+  </ul>
+  <h3 class="text-2xl font-semibold mt-4 mb-2">Preprints</h3>
+  <ul class="list-decimal ml-5">
+    <li>Baruah, R., "Amortized inference of multi-modal posteriors using likelihood-weighted normalizing flows", (2025). arXiv:2512.04954 [cs.LG].</li>
+    <li>Baruah, R., Mondal, S., Patra, S.K., Roy, S., "CNN on ‘top’: In search of scalable &amp; lightweight image-based jet taggers", (2025). arXiv:2512.05031 [hep-ph].</li>
+  </ul>
+</section>
 
-        <!-- Hero Section (Home Page) -->
-        <section id="home-section" class="page-section flex flex-col md:flex-row items-center min-h-[80vh]">
-            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Unveiling the Universe,</h1>
-                <h2 class="text-3xl md:text-5xl font-bold text-cyan-400 mb-6">One Particle at a Time.</h2>
-                <p class="text-lg text-gray-400 mb-8 max-w-xl mx-auto md:mx-0">
-                    I'm a graduate student in elementary particle physics, leveraging statistics and machine learning to explore the fundamental laws of nature.
-                </p>
-                <a href="#" onclick="showSection('research')" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 text-lg">
-                    Explore My Research
-                </a>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <!-- Placeholder for a professional headshot or a relevant graphic -->
-                <img src="https://placehold.co/400x400/111827/7DD3FC?text=Your+Photo" alt="Your Name" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 border-cyan-500 shadow-lg">
-            </div>
-        </section>
+<section id="talks">
+  <h2 class="text-3xl font-bold mb-4">Invited Talks and Presentations</h2>
+  <ul class="list-disc ml-5">
+    <li>“Efficient Machine Learning for Physics: Solving Inverse Problems and Identifying Particles”, HEP Seminar, Indian Institute of Technology Kanpur, 9 December 2025.</li>
+    <li>“Bayesian Model Comparison: The Battle Royale of New Physics Models”, PHOENIX 2025 (IIT Hyderabad), 9–11 July 2025.</li>
+    <li>“Optimizing Probes of New Physics Models: Generative Algorithm-Driven Nested Sampling for Parameter Estimation”, From Big Bang to Now: A Theory-Experiment Dialogue (SRM University AP, Andhra Pradesh), 23–25 January 2025.</li>
+    <li>“Boosting Beyond Standard Model Searches: ML-Enhanced Nested Sampling for Rapid Parameter Estimation”, XXVI DAE-BRNS HEP Symposium 2024 (Banaras Hindu University, Varanasi), 19–23 December 2024.</li>
+    <li>“Seeking Higgsino-like Neutralino guided by GNN-based Top Tagger”, XXVI DAE-BRNS HEP Symposium 2024 (Banaras Hindu University, Varanasi), 19–23 December 2024.</li>
+  </ul>
+</section>
 
-        <!-- About Me Section -->
-        <section id="about-section" class="page-section hidden py-20">
-            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-2/3 text-gray-300 leading-relaxed space-y-4">
-                    <p>
-                        Hello! I'm [Your Name], a passionate Ph.D. candidate at [Your University]. My research sits at the exciting intersection of high-energy particle physics, advanced statistical methods, and cutting-edge machine learning. I am driven by a deep curiosity about the fundamental constituents of our universe and the forces that govern them.
-                    </p>
-                    <p>
-                        My current work with the [Your Collaboration/Experiment, e.g., ATLAS, CMS] collaboration focuses on [briefly describe your research, e.g., searching for new physics beyond the Standard Model, precision measurements of the Higgs boson, etc.]. I specialize in developing and implementing novel algorithms to analyze vast datasets from particle collisions, aiming to extract subtle signals from overwhelming backgrounds.
-                    </p>
-                    <p>
-                        I earned my Bachelor's degree in Physics from [Your Undergraduate University], where I first became fascinated with the quantum world. When I'm not analyzing data or running simulations, I enjoy [Your Hobby 1], [Your Hobby 2], and contributing to open-source scientific software.
-                    </p>
-                </div>
-                 <div class="md:w-1/3">
-                    <div class="glassmorphism rounded-lg p-6">
-                        <h3 class="font-bold text-xl mb-4 text-white">Quick Facts</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-center"><i data-lucide="microscope" class="w-5 h-5 mr-3 text-cyan-400"></i>Field: Particle Physics</li>
-                            <li class="flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-3 text-cyan-400"></i>Methods: Statistics & ML</li>
-                            <li class="flex items-center"><i data-lucide="graduation-cap" class="w-5 h-5 mr-3 text-cyan-400"></i>Institution: [Your University]</li>
-                            <li class="flex items-center"><i data-lucide="github" class="w-5 h-5 mr-3 text-cyan-400"></i><a href="#" class="hover:underline">GitHub Profile</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research Section -->
-        <section id="research-section" class="page-section hidden py-20">
-            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Research Highlights</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Research Item 1 -->
-                <div class="glassmorphism rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/1A202C/7DD3FC?text=Project+Graphic" alt="Research Project 1" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-white">Machine Learning for Jet Tagging</h3>
-                        <p class="text-gray-400 mb-4">
-                            Developing deep learning models (Graph Neural Networks) to identify the origin of particle jets, significantly improving the efficiency of new physics searches.
-                        </p>
-                        <a href="#" class="text-cyan-400 hover:underline font-semibold">Learn More &rarr;</a>
-                    </div>
-                </div>
-                <!-- Research Item 2 -->
-                <div class="glassmorphism rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/1A202C/7DD3FC?text=Project+Graphic" alt="Research Project 2" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-white">Statistical Inference with Profile Likelihood</h3>
-                        <p class="text-gray-400 mb-4">
-                            Applying advanced statistical techniques to set confidence limits on the properties of the Higgs boson, using data from the Large Hadron Collider.
-                        </p>
-                        <a href="#" class="text-cyan-400 hover:underline font-semibold">View Analysis &rarr;</a>
-                    </div>
-                </div>
-                <!-- Research Item 3 -->
-                <div class="glassmorphism rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/1A202C/7DD3FC?text=Project+Graphic" alt="Research Project 3" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-white">Simulation & Data Analysis Pipeline</h3>
-                        <p class="text-gray-400 mb-4">
-                            Building and maintaining a scalable data analysis pipeline for processing petabytes of Monte Carlo simulation data for the [Your Experiment] experiment.
-                        </p>
-                        <a href="#" class="text-cyan-400 hover:underline font-semibold">See on GitHub &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications-section" class="page-section hidden py-20">
-            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Publications</h2>
-            <div class="space-y-8">
-                <!-- Publication Item 1 -->
-                <div class="p-6 rounded-lg glassmorphism">
-                    <p class="text-gray-400 text-sm">Journal of High Energy Physics | 2024</p>
-                    <h3 class="text-lg font-bold text-white mt-1">
-                        <a href="#" class="hover:text-cyan-400 transition-colors">Search for supersymmetry in final states with jets, missing transverse momentum, and isolated leptons...</a>
-                    </h3>
-                    <p class="text-gray-300 mt-2">The [Your Collaboration] Collaboration (Author)</p>
-                </div>
-                <!-- Publication Item 2 -->
-                <div class="p-6 rounded-lg glassmorphism">
-                    <p class="text-gray-400 text-sm">Physical Review D | 2023</p>
-                    <h3 class="text-lg font-bold text-white mt-1">
-                        <a href="#" class="hover:text-cyan-400 transition-colors">A deep learning approach to quark-gluon discrimination</a>
-                    </h3>
-                    <p class="text-gray-300 mt-2">[Your Name], [Co-author Name], et al.</p>
-                </div>
-                 <!-- Publication Item 3 -->
-                <div class="p-6 rounded-lg glassmorphism">
-                    <p class="text-gray-400 text-sm">Conference Proceedings - CHEP | 2022</p>
-                    <h3 class="text-lg font-bold text-white mt-1">
-                        <a href="#" class="hover:text-cyan-400 transition-colors">Accelerating particle track reconstruction with Graph Neural Networks on FPGAs</a>
-                    </h3>
-                    <p class="text-gray-300 mt-2">[Your Name], [Co-author Name], et al.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Talks Section -->
-        <section id="talks-section" class="page-section hidden py-20">
-            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Invited Talks & Presentations</h2>
-            <div class="space-y-8">
-                <!-- Talk Item 1 -->
-                <div class="p-6 rounded-lg glassmorphism">
-                    <p class="text-gray-400 text-sm">Physics Colloquium, [Inviting University] | 2024</p>
-                    <h3 class="text-lg font-bold text-white mt-1">
-                        Probing New Physics with Machine Learning at the LHC
-                    </h3>
-                    <p class="text-gray-300 mt-2">Invited Speaker</p>
-                </div>
-                <!-- Talk Item 2 -->
-                <div class="p-6 rounded-lg glassmorphism">
-                    <p class="text-gray-400 text-sm">Connecting The Dots (CTD) Workshop | 2023</p>
-                    <h3 class="text-lg font-bold text-white mt-1">
-                        Graph Neural Networks for Particle Tracking in High-Luminosity Environments
-                    </h3>
-                    <p class="text-gray-300 mt-2">Contributed Talk</p>
-                </div>
-                 <!-- Talk Item 3 -->
-                <div class="p-6 rounded-lg glassmorphism">
-                    <p class="text-gray-400 text-sm">[Your University] Graduate Research Symposium | 2022</p>
-                    <h3 class="text-lg font-bold text-white mt-1">
-                        A Novel Approach to Jet Substructure Tagging using Attention-based Networks
-                    </h3>
-                    <p class="text-gray-300 mt-2">Poster Presentation (Best Poster Award)</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Skills Section -->
-        <section id="skills-section" class="page-section hidden py-20">
-            <h2 class="section-title text-3xl font-bold mb-12 text-cyan-400 border-cyan-400 inline-block">Technical Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="p-4 glassmorphism rounded-lg">
-                    <i data-lucide="python" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
-                    <h3 class="font-semibold text-lg">Python</h3>
-                    <p class="text-sm text-gray-400">NumPy, SciPy, Pandas, Matplotlib</p>
-                </div>
-                <div class="p-4 glassmorphism rounded-lg">
-                    <i data-lucide="brain-circuit" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
-                    <h3 class="font-semibold text-lg">Machine Learning</h3>
-                    <p class="text-sm text-gray-400">PyTorch, TensorFlow, Scikit-learn</p>
-                </div>
-                <div class="p-4 glassmorphism rounded-lg">
-                    <i data-lucide="braces" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
-                    <h3 class="font-semibold text-lg">C++ & ROOT</h3>
-                    <p class="text-sm text-gray-400">High-performance data analysis</p>
-                </div>
-                <div class="p-4 glassmorphism rounded-lg">
-                    <i data-lucide="database" class="w-12 h-12 mx-auto mb-2 text-cyan-400"></i>
-                    <h3 class="font-semibold text-lg">Data Tools</h3>
-                    <p class="text-sm text-gray-400">SQL, Docker, Git, HPC/Slurm</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact-section" class="page-section hidden py-20 text-center">
-            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
-                I'm always open to discussing research, collaborating on projects, or connecting with fellow physicists and data scientists. Feel free to reach out!
-            </p>
-            <div class="flex justify-center space-x-6">
-                 <a href="mailto:your.email@university.edu" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 flex items-center gap-2">
-                    <i data-lucide="mail" class="w-5 h-5"></i> Email Me
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-400 p-3 rounded-full glassmorphism transition-colors duration-300">
-                    <i data-lucide="linkedin" class="w-6 h-6"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-400 p-3 rounded-full glassmorphism transition-colors duration-300">
-                    <i data-lucide="github" class="w-6 h-6"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-400 p-3 rounded-full glassmorphism transition-colors duration-300">
-                    <i data-lucide="graduation-cap" class="w-6 h-6"></i> <!-- For Google Scholar, etc. -->
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-gray-800">
-        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
-            <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // --- Page Navigation Logic ---
-        function showSection(sectionId) {
-            // Hide all page sections
-            document.querySelectorAll('.page-section').forEach(section => {
-                section.classList.add('hidden');
-            });
-
-            // Show the requested section
-            const activeSection = document.getElementById(sectionId + '-section');
-            if (activeSection) {
-                activeSection.classList.remove('hidden');
-            } else {
-                // If section not found, default to home
-                document.getElementById('home-section').classList.remove('hidden');
-            }
-
-            // Close the mobile menu if it's open
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.add('hidden');
-            
-            // Scroll to the top of the page for a clean transition
-            window.scrollTo(0, 0);
-        }
-
-        // Show the home section by default when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            showSection('home');
-        });
-
-        // --- Mobile Menu Toggle ---
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
+<section id="contact">
+  <h2 class="text-3xl font-bold mb-4">Contact</h2>
+  <p>Connect with me via <a href="https://orcid.org/0000-0001-9792-5496" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">ORCID</a> and <a href="https://scholar.google.com/citations?user=YZDUItYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Google Scholar</a>.</p>
+</section>
