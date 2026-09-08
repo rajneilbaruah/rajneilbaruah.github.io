@@ -2,209 +2,244 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rajneil Baruah — particle physics, BSM phenomenology, machine learning, and statistical inference." />
+  <meta name="theme-color" content="#08111f" />
   <title>Rajneil Baruah | Particle Physics & Machine Learning</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .page-section { display: none; }
-    .page-section.active { display: block; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
 
-<body class="bg-gray-900 text-gray-200">
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Rajneil Baruah home">RB<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#current-work">Current Work</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#links">Links</a>
+        <a class="nav-cta" href="RAJNEILCV.pdf" target="_blank" rel="noopener">CV</a>
+      </div>
+    </nav>
+  </header>
 
-<!-- ================= NAVBAR ================= -->
-<header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur">
-  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <span onclick="showSection('home')" class="text-2xl font-bold text-cyan-400 cursor-pointer">
-      Rajneil Baruah
-    </span>
-    <div class="hidden md:flex space-x-6">
-      <button onclick="showSection('about')">About</button>
-      <button onclick="showSection('research')">Research</button>
-      <button onclick="showSection('publications')">Publications</button>
-      <button onclick="showSection('talks')">Talks</button>
-      <button onclick="showSection('skills')">Skills</button>
-      <button onclick="showSection('contact')" class="bg-cyan-500 px-4 py-2 rounded-full">
-        Contact
-      </button>
-    </div>
-  </nav>
-</header>
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> Particle Physics · Machine Learning · Statistical Inference</div>
+        <h1>Understanding what the data<br /><span>might be trying to tell us.</span></h1>
+        <p class="hero-lead">
+          I work on problems in particle physics where the interesting answer can be hidden inside
+          complicated data, large parameter spaces, and expensive computations.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Explore my research</a>
+          <a class="button secondary" href="RAJNEILCV.pdf" target="_blank" rel="noopener">View CV</a>
+        </div>
+        <div class="hero-links" id="heroLinks"></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="core"></div>
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+        <div class="particle p5"></div>
+        <div class="hero-grid"></div>
+      </div>
+    </section>
 
-<!-- ================= MAIN ================= -->
-<main class="container mx-auto px-6 py-16 max-w-4xl">
+    <section class="stats wrap" aria-label="Quick facts">
+      <div class="stat"><strong>BSM</strong><span>Phenomenology</span></div>
+      <div class="stat"><strong>ML</strong><span>Collider Physics</span></div>
+      <div class="stat"><strong>Bayesian</strong><span>Inference</span></div>
+      <div class="stat"><strong>HPC</strong><span>Efficient Computing</span></div>
+    </section>
 
-<!-- ================= HOME ================= -->
-<section id="home" class="page-section active">
-  <h1 class="text-5xl font-bold mb-4">Unveiling the Universe,</h1>
-  <h2 class="text-4xl font-bold text-cyan-400 mb-6">One Particle at a Time.</h2>
-  <p class="text-gray-400 mb-8">
-    Ph.D. Scholar in Particle Physics working at the intersection of
-    Beyond the Standard Model phenomenology, statistical inference,
-    and machine learning.
-  </p>
-  <button onclick="showSection('research')" class="bg-cyan-500 px-6 py-3 rounded-full text-white">
-    Explore My Research
-  </button>
-</section>
+    <!-- ABOUT -->
+    <section class="section wrap two-col" id="about">
+      <div>
+        <p class="section-kicker">01 · About</p>
+        <h2>A physicist interested in the hard parts of inference.</h2>
+      </div>
+      <div class="section-body prose">
+        <p>
+          I am a Ph.D. researcher in particle physics at <strong>Bennett University</strong>, advised by
+          Dr. Subhadeep Mondal. I also work as a Junior Research Fellow on the DST–SERB CRG project
+          <em>“A Deep Analysis Framework for Physics Beyond the Standard Model.”</em>
+        </p>
+        <p>
+          My broad goal is simple: <strong>find better ways of learning from particle-collision data.</strong>
+          That includes studying possible physics beyond the Standard Model, building machine-learning
+          methods that can recognise useful patterns in collider events, and developing statistical tools
+          that can search large spaces of possible explanations without becoming prohibitively expensive.
+        </p>
+        <p>
+          My work sits between physics, statistics, and computation. I am particularly interested in methods
+          that are not only accurate, but also practical: faster to run, lighter to deploy, and easier to use
+          in real scientific workflows.
+        </p>
+      </div>
+    </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="page-section">
-  <h2 class="text-3xl font-bold text-cyan-400 mb-6">About Me</h2>
+    <!-- PLAIN LANGUAGE -->
+    <section class="section section-soft" id="plain-language">
+      <div class="wrap plain-grid">
+        <div>
+          <p class="section-kicker">In plain language</p>
+          <h2>So, what do I actually do?</h2>
+        </div>
+        <div class="plain-cards">
+          <article class="plain-card">
+            <span class="plain-number">01</span>
+            <h3>Look for new physics</h3>
+            <p>
+              Our current theory of fundamental particles works remarkably well, but it is not the whole story.
+              I study theoretical models that could explain what the Standard Model leaves unanswered and ask how
+              present or future collider data can test them.
+            </p>
+          </article>
+          <article class="plain-card">
+            <span class="plain-number">02</span>
+            <h3>Teach computers to spot patterns</h3>
+            <p>
+              Particle collisions can produce extremely complicated sprays of particles called jets. I develop
+              machine-learning methods that learn subtle patterns in these jets so that interesting events can be
+              identified more efficiently.
+            </p>
+          </article>
+          <article class="plain-card">
+            <span class="plain-number">03</span>
+            <h3>Make hard searches faster</h3>
+            <p>
+              Testing a model can involve exploring thousands or millions of possible parameter choices. I work on
+              statistical and generative methods that can make that exploration much more efficient.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <p class="mb-4">
-    I am a Ph.D. scholar in Physics at <b>Bennett University</b> (2022–present),
-    advised by <b>Dr. Subhadeep Mondal</b>. I am also a Junior Research Fellow
-    at <b>Bangabasi Evening College, University of Calcutta</b>, working under the
-    DST–SERB CRG project
-    <i>“A Deep Analysis Framework for Physics Beyond the Standard Model”</i>
-    (CRG/2022/003208).
-  </p>
+    <!-- RESEARCH -->
+    <section class="section wrap" id="research">
+      <p class="section-kicker">02 · Research</p>
+      <div class="section-heading-row">
+        <h2>Three connected research directions.</h2>
+        <p class="section-intro">Different tools, one broad question: how can we extract more reliable information from difficult particle-physics data?</p>
+      </div>
+      <div class="research-grid">
+        <article class="research-card large">
+          <div class="card-index">01</div>
+          <h3>Inference in difficult parameter spaces</h3>
+          <p>
+            I develop ML-assisted methods for Bayesian inference, including normalizing-flow-based approaches that
+            help conventional sampling methods explore complicated, high-dimensional, or multi-modal distributions.
+          </p>
+          <div class="tags"><span>Normalizing Flows</span><span>Nested Sampling</span><span>MCMC</span></div>
+        </article>
+        <article class="research-card">
+          <div class="card-index">02</div>
+          <h3>Machine learning for collider signatures</h3>
+          <p>
+            I design jet-tagging methods using image-based, graph-based, and attention-based representations, with
+            particular attention to lightweight and computationally efficient architectures.
+          </p>
+          <div class="tags"><span>CNNs</span><span>GNNs</span><span>Transformers</span></div>
+        </article>
+        <article class="research-card">
+          <div class="card-index">03</div>
+          <h3>BSM phenomenology</h3>
+          <p>
+            I study scenarios beyond the Standard Model, including non-minimal Higgs sectors, seesaw models, and
+            R-parity-violating supersymmetry, using collider observables to constrain their parameter spaces.
+          </p>
+          <div class="tags"><span>BSM</span><span>Collider Physics</span><span>Global Fits</span></div>
+        </article>
+      </div>
+    </section>
 
-  <p class="mb-4">
-    My research focuses on the phenomenology of Beyond the Standard Model (BSM)
-    scenarios, including non-minimal Higgs sectors, Seesaw models, and
-    R-parity-violating supersymmetry. A central theme of my work is developing
-    statistically robust and computationally efficient tools to constrain
-    high-dimensional BSM parameter spaces using collider data.
-  </p>
+    <!-- CURRENT WORK -->
+    <section class="section section-dark" id="current-work">
+      <div class="wrap">
+        <div class="section-heading-row current-head">
+          <div>
+            <p class="section-kicker">03 · Currently working on</p>
+            <h2>What is on my desk right now.</h2>
+          </div>
+          <p class="section-intro">This section is intentionally manual: it is where I can tell a human reader what is active now, rather than waiting for a database to catch up.</p>
+        </div>
+        <div class="current-grid" id="currentWork"></div>
+      </div>
+    </section>
 
-  <p>
-    I received my M.Sc. in Physics from the University of Delhi (2020), where my
-    dissertation focused on non-perturbative methods in quantum field theory,
-    and a B.Sc. (Hons.) in Physics from the University of Delhi (2018).
-  </p>
-</section>
+    <!-- PUBLICATIONS -->
+    <section class="section wrap" id="publications">
+      <p class="section-kicker">04 · Publications</p>
+      <div class="section-heading-row">
+        <div>
+          <h2>Research output, kept current automatically.</h2>
+          <p class="sync-note" id="syncNote">Loading publication data…</p>
+        </div>
+        <a class="text-link" href="https://inspirehep.net/authors/2774379" target="_blank" rel="noopener">Open my INSPIRE profile ↗</a>
+      </div>
+      <div class="publication-list" id="publicationsList"></div>
+      <div class="publication-footer">
+        <a class="button secondary" href="https://arxiv.org/search/?searchtype=author&query=Baruah%2C+Rajneil" target="_blank" rel="noopener">Search arXiv ↗</a>
+        <a class="button secondary" href="https://inspirehep.net/authors/2774379" target="_blank" rel="noopener">All publications on INSPIRE ↗</a>
+      </div>
+    </section>
 
-<!-- ================= RESEARCH ================= -->
-<section id="research" class="page-section">
-  <h2 class="text-3xl font-bold text-cyan-400 mb-6">Research</h2>
+    <!-- TALKS -->
+    <section class="section section-soft" id="talks">
+      <div class="wrap">
+        <p class="section-kicker">05 · Talks</p>
+        <div class="section-heading-row">
+          <h2>Selected talks & seminars.</h2>
+          <p class="section-intro">A small selection is shown here; the full list remains in the CV.</p>
+        </div>
+        <div class="talk-list" id="talksList"></div>
+      </div>
+    </section>
 
-  <ul class="list-disc ml-6 space-y-3">
-    <li>
-      <b>Simulation-Based Inference & Normalizing Flows:</b>
-      Developing hybrid inference frameworks that combine normalizing flows
-      with Nested Sampling and MCMC to efficiently explore multi-modal,
-      high-dimensional BSM parameter spaces.
-    </li>
-    <li>
-      <b>Machine Learning for Jet Tagging:</b>
-      Designing and comparing GNN-, CNN-, and attention-based jet taggers to
-      identify boosted objects at hadron colliders, with a focus on lightweight
-      and computationally efficient architectures.
-    </li>
-    <li>
-      <b>Global Fits of BSM Models:</b>
-      Applying ML-assisted inference to constrain models such as Type-II Seesaw
-      and RPV-MSSM using collider observables.
-    </li>
-    <li>
-      <b>Generative & Amortized Inference:</b>
-      Exploring likelihood-weighted normalizing flows, diffusion models, and
-      other generative approaches for rapid posterior estimation.
-    </li>
-  </ul>
-</section>
+    <!-- CV / LINKS -->
+    <section class="section wrap" id="links">
+      <div class="links-panel">
+        <div>
+          <p class="section-kicker">06 · Elsewhere</p>
+          <h2>Find the work where you already know me.</h2>
+          <p class="section-intro">These profiles are useful for the formal record; this site is the place for context.</p>
+        </div>
+        <div class="link-grid" id="profileLinks"></div>
+      </div>
+    </section>
 
-<!-- ================= PUBLICATIONS ================= -->
-<section id="publications" class="page-section">
-  <h2 class="text-3xl font-bold text-cyan-400 mb-6">Publications</h2>
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="wrap contact-inner">
+        <p class="section-kicker">Contact</p>
+        <h2>Interested in the work?</h2>
+        <p>For research discussions, collaborations, seminars, or postdoctoral opportunities:</p>
+        <a class="email" href="mailto:rajneilb.physics@gmail.com">rajneilb.physics@gmail.com</a>
+      </div>
+    </section>
+  </main>
 
-  <h3 class="text-xl font-semibold mb-2">Journal Articles</h3>
-  <ul class="space-y-3 mb-6">
-    <li>
-      <b>Eur. Phys. J. ST (2024)</b><br>
-      Probing intractable beyond-standard-model parameter spaces armed with
-      machine learning
-    </li>
-    <li>
-      <b>Phys. Rev. D (2025)</b><br>
-      Probing sub-TeV Higgsinos aided by a machine-learning-based top tagger
-      in trilinear RPV SUSY
-    </li>
-    <li>
-      <b>Eur. Phys. J. C (2025)</b><br>
-      Normalizing flow-assisted nested sampling on the Type-II Seesaw model
-    </li>
-  </ul>
+  <footer class="footer wrap">
+    <span>© <span id="year"></span> Rajneil Baruah</span>
+    <span class="footer-note">Updated from INSPIRE-HEP automatically · <a href="#home">Back to top ↑</a></span>
+  </footer>
 
-  <h3 class="text-xl font-semibold mb-2">Preprints</h3>
-  <ul class="space-y-2">
-    <li>
-      Amortized inference of multi-modal posteriors using likelihood-weighted
-      normalizing flows (arXiv:2512.04954)
-    </li>
-    <li>
-      CNN on “top”: In search of scalable & lightweight image-based jet taggers
-      (arXiv:2512.05031)
-    </li>
-  </ul>
-</section>
-
-<!-- ================= TALKS ================= -->
-<section id="talks" class="page-section">
-  <h2 class="text-3xl font-bold text-cyan-400 mb-6">Talks & Presentations</h2>
-
-  <ul class="list-disc ml-6 space-y-2">
-    <li>
-      Efficient Machine Learning for Physics: Solving Inverse Problems and
-      Identifying Particles — IIT Kanpur (2025)
-    </li>
-    <li>
-      Bayesian Model Comparison: The Battle Royale of New Physics Models —
-      PHOENIX 2025, IIT Hyderabad
-    </li>
-    <li>
-      Boosting Beyond Standard Model Searches using ML-Enhanced Nested Sampling —
-      XXVI DAE-BRNS HEP Symposium (2024)
-    </li>
-  </ul>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="page-section">
-  <h2 class="text-3xl font-bold text-cyan-400 mb-6">Skills</h2>
-
-  <p>
-    <b>Programming:</b> Python, C/C++, Fortran, Mathematica<br>
-    <b>ML:</b> PyTorch, TensorFlow, Normalizing Flows, CNNs, GNNs, Transformers<br>
-    <b>HEP Tools:</b> SARAH, SPheno, MadGraph, Delphes, Pythia, ROOT<br>
-    <b>Other:</b> Git, Linux, HPC/Slurm
-  </p>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="page-section text-center">
-  <h2 class="text-3xl font-bold text-cyan-400 mb-6">Contact</h2>
-
-  <p class="mb-4">📧 rajneilb.physics@gmail.com</p>
-
-  <div class="space-x-6">
-    <a href="https://orcid.org/0000-0001-9792-5496" target="_blank" class="text-cyan-400">
-      ORCID
-    </a>
-    <a href="https://scholar.google.com/citations?user=YZDUItYAAAAJ" target="_blank" class="text-cyan-400">
-      Google Scholar
-    </a>
-  </div>
-</section>
-
-</main>
-
-<!-- ================= SCRIPT ================= -->
-<script>
-  function showSection(id) {
-    document.querySelectorAll('.page-section')
-      .forEach(s => s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    window.scrollTo(0,0);
-  }
-</script>
-
+  <script src="app.js"></script>
 </body>
 </html>

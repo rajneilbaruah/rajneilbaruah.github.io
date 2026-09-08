@@ -1,0 +1,32 @@
+[
+  {
+    "date": "12 May 2026",
+    "title": "The Shape of Physics: Bayesian Inference, Jet Geometry, and the Architectures for Discovery",
+    "venue": "HEP-Theory Division Seminar · Argonne National Laboratory",
+    "link": "https://docs.google.com/presentation/d/1WGMms5GuMCzrgUtoZUk4WRZieWU28MJx/edit?usp=drive_link&ouid=116911185670449512645&rtpof=true&sd=true"
+  },
+  {
+    "date": "9 Dec 2025",
+    "title": "Efficient Machine Learning for Physics: Solving Inverse Problems and Identifying Particles",
+    "venue": "HEP Seminar · Indian Institute of Technology Kanpur",
+    "link": "https://drive.google.com/file/d/1WPXAQgk-ZAkcl7J3PdEdSe_PdWoJNTf9/view?usp=sharing"
+  },
+  {
+    "date": "9–11 Jul 2025",
+    "title": "Bayesian Model Comparison: The Battle Royale of New Physics Models",
+    "venue": "PHOENIX 2025 · Indian Institute of Technology Hyderabad",
+    "link": "https://drive.google.com/file/d/1qpNJUb9DR1x0Q6-NzYUj7RsLr2xw9COj/view?usp=drive_link"
+  },
+  {
+    "date": "23–25 Jan 2025",
+    "title": "Optimizing Probes of New Physics Models: Generative Algorithm-Driven Nested Sampling for Parameter Estimation",
+    "venue": "From Big Bang to Now: A Theory–Experiment Dialogue · SRM University AP",
+    "link": "https://drive.google.com/file/d/1UGfhAJBO4d_OD8nW4mEz4OZb9-Zr8H-W/view?usp=drive_link"
+  },
+  {
+    "date": "19–23 Dec 2024",
+    "title": "Boosting Beyond Standard Model Searches: ML-Enhanced Nested Sampling for Rapid Parameter Estimation",
+    "venue": "XXVI DAE-BRNS High Energy Physics Symposium · Banaras Hindu University",
+    "link": "https://drive.google.com/file/d/1bhfoUTOzx-wvO_OchmWuEZDAyBzvVT8x/view?usp=sharing"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "status": "Active research",
+    "title": "Faster inference for difficult BSM parameter spaces",
+    "description": "Developing machine-learning-assisted inference methods that can make high-dimensional and multi-modal parameter searches more computationally tractable, while retaining the strengths of established sampling methods.",
+    "meta": "Normalizing flows · Bayesian inference · Nested Sampling"
+  },
+  {
+    "status": "Active research",
+    "title": "Lightweight machine learning for jet tagging",
+    "description": "Designing and comparing efficient image-, graph-, and attention-based models for identifying boosted objects in collider data, with an emphasis on useful performance without unnecessary computational cost.",
+    "meta": "CNNs · GNNs · Attention / Transformers"
+  },
+  {
+    "status": "Ongoing manuscript",
+    "title": "Likelihood-weighted amortized inference",
+    "description": "Exploring ways for generative models to learn posterior structure so that repeated inference can become much faster once the model has been trained.",
+    "meta": "Amortized inference · Normalizing flows"
+  },
+  {
+    "status": "Architecture development",
+    "title": "Scalable transformer architectures for jet tagging",
+    "description": "Investigating modular transformer designs for collider applications, with attention to scalability, efficiency, and practical deployment.",
+    "meta": "Transformers · Efficient architectures · Jet tagging"
+  }
+]

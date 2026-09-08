@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-09-09T00:00:00Z",
+  "source": "INSPIRE-HEP",
+  "publications": [
+    {
+      "date": "2025-07-01",
+      "title": "Normalizing flow-assisted nested sampling on Type-II Seesaw model",
+      "venue": "Eur. Phys. J. C 85, 816 (2025)",
+      "type": "Journal article",
+      "authors": ["R. Baruah", "S. Mondal", "S. K. Patra", "S. Roy"],
+      "doi": "10.1140/epjc/s10052-025-14502-5",
+      "arxiv": "2501.16432",
+      "inspire": "https://inspirehep.net/literature?q=arxiv:2501.16432"
+    },
+    {
+      "date": "2025-05-01",
+      "title": "Probing sub-TeV Higgsinos aided by a machine-learning-based top tagger in the context of trilinear R-parity violating SUSY",
+      "venue": "Phys. Rev. D 111, 095004 (2025)",
+      "type": "Journal article",
+      "authors": ["R. Baruah", "A. Choudhury", "K. Ghosh", "S. Mondal", "R. Sahu"],
+      "doi": "10.1103/PhysRevD.111.095004",
+      "arxiv": "2412.11862",
+      "inspire": "https://inspirehep.net/literature?q=arxiv:2412.11862"
+    },
+    {
+      "date": "2024-07-01",
+      "title": "Probing intractable beyond-standard-model parameter spaces armed with machine learning",
+      "venue": "Eur. Phys. J. ST 233, 2597–2618 (2024)",
+      "type": "Journal article",
+      "authors": ["R. Baruah", "S. Mondal", "S. K. Patra", "S. Roy"],
+      "doi": "10.1140/epjs/s11734-024-01236-w",
+      "arxiv": "2404.02698",
+      "inspire": "https://inspirehep.net/literature?q=arxiv:2404.02698"
+    },
+    {
+      "date": "2025-12-01",
+      "title": "Amortized inference of multi-modal posteriors using likelihood-weighted normalizing flows",
+      "venue": "arXiv preprint",
+      "type": "Preprint",
+      "authors": ["R. Baruah"],
+      "arxiv": "2512.04954",
+      "inspire": "https://inspirehep.net/literature?q=arxiv:2512.04954"
+    },
+    {
+      "date": "2025-12-01",
+      "title": "CNN on ‘top’: In search of scalable & lightweight image-based jet taggers",
+      "venue": "arXiv preprint",
+      "type": "Preprint",
+      "authors": ["R. Baruah", "S. Mondal", "S. K. Patra", "S. Roy"],
+      "arxiv": "2512.05031",
+      "inspire": "https://inspirehep.net/literature?q=arxiv:2512.05031"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "This is Sparta: A modular, efficient and scalable transformer architecture for jet-tagging",
+      "venue": "Manuscript in preparation",
+      "type": "In preparation",
+      "authors": ["R. Baruah", "S. Mondal", "S. K. Patra", "S. Roy"]
+    }
+  ]
+}
