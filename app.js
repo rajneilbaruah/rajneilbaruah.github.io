@@ -1,10 +1,10 @@
 const CONFIG = {
   inspireApi: 'https://inspirehep.net/api/literature?size=100&sort=mostrecent&q=authors.full_name%3A%22Baruah%2C%20Rajneil%22',
   inspireProfile: 'https://inspirehep.net/authors/2774379',
-  orcid: 'https://orcid.org/0000-0001-9792-5496',
+  orcid: 'https://orcid.org/0000-0003-4472-5874',
   scholar: 'https://scholar.google.com/citations?user=YZDUItYAAAAJ',
   arxiv: 'https://arxiv.org/search/?searchtype=author&query=Baruah%2C+Rajneil',
-  instagram: 'YOUR_INSTAGRAM_URL'
+  instagram: 'https://www.instagram.com/rajneilbaruah/'
 };
 
 const $ = (sel) => document.querySelector(sel);
