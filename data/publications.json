@@ -1,120 +1,231 @@
 {
-  "generated_at": "2026-09-10T18:30:00Z",
+  "generated_at": "2026-09-10T19:40:06.300231+00:00",
   "source": "INSPIRE-HEP",
   "query": "a Baruah, Rajneil",
   "publications": [
     {
-      "date": "2026-02-01",
-      "title": "Probing Sub-teV Higgsinos in a Trilinear RPV SUSY Scenario Using GNN-Based Boosted Top Tagger",
-      "venue": "Springer Proc. Phys. 432, 357-360 (2026)",
-      "type": "Conference / proceedings",
+      "date": "2026-02-03",
+      "title": "Probing Sub-teV Higgsinos in a Trilinear RPV SUSY Scenario Using GNN-Based Boosted Top Tagger",
+      "venue": "Springer Proc.Phys. 432 357 (2026)",
+      "type": "Journal article",
       "authors": [
-        {"full_name": "Rajneil Baruah"},
-        {"full_name": "Arghya Choudhury"},
-        {"full_name": "Kirtiman Ghosh"},
-        {"full_name": "Subhadeep Mondal"},
-        {"full_name": "Rameswar Sahu"}
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Choudhury, Arghya"
+        },
+        {
+          "full_name": "Ghosh, Kirtiman"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Sahu, Rameswar"
+        }
       ],
       "doi": "10.1007/978-981-95-1513-4_81",
-      "inspire": "https://inspirehep.net/literature/2859985"
+      "inspire": "https://inspirehep.net/literature/3116588"
     },
     {
-      "date": "2026-02-01",
-      "title": "BSM Parameter Space Exploration with ML-Assisted Nested Sampling",
-      "venue": "Springer Proc. Phys. 432, 409-412 (2026)",
-      "type": "Conference / proceedings",
+      "date": "2026-02-03",
+      "title": "Boosting Beyond Standard Model Searches: ML-Enhanced Nested-Sampling for Rapid Parameter Estimation",
+      "venue": "Springer Proc.Phys. 432 445 (2026)",
+      "type": "Journal article",
       "authors": [
-        {"full_name": "Rajneil Baruah"},
-        {"full_name": "Subhadeep Mondal"},
-        {"full_name": "Sunando Kumar Patra"},
-        {"full_name": "Satyajit Roy"}
-      ],
-      "doi": "10.1007/978-981-95-1513-4_93",
-      "inspire": "https://inspirehep.net/literature/3116699"
-    },
-    {
-      "date": "2026-02-01",
-      "title": "Boosting Beyond Standard Model Searches: ML-Enhanced Nested-Sampling for Rapid Parameter Estimation",
-      "venue": "Springer Proc. Phys. 432, 445-448 (2026)",
-      "type": "Conference / proceedings",
-      "authors": [
-        {"full_name": "Rajneil Baruah"},
-        {"full_name": "Subhadeep Mondal"},
-        {"full_name": "Sunando Kumar Patra"},
-        {"full_name": "Satyajit Roy"}
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Patra, Sunando Kumar"
+        },
+        {
+          "full_name": "Roy, Satyajit"
+        }
       ],
       "doi": "10.1007/978-981-95-1513-4_102",
       "inspire": "https://inspirehep.net/literature/3116660"
     },
     {
-      "date": "2025-12-05",
-      "title": "CNN on ‘Top’: In Search of Scalable & Lightweight Image-based Jet Taggers",
-      "venue": "arXiv preprint (2025)",
-      "type": "Preprint",
+      "date": "2026-02-03",
+      "title": "BSM Parameter Space Exploration with ML-Assisted Nested Sampling",
+      "venue": "Springer Proc.Phys. 432 409 (2026)",
+      "type": "Journal article",
       "authors": [
-        {"full_name": "Rajneil Baruah"},
-        {"full_name": "Subhadeep Mondal"},
-        {"full_name": "Sunando Kumar Patra"},
-        {"full_name": "Satyajit Roy"}
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Patra, Sunando Kumar"
+        },
+        {
+          "full_name": "Roy, Satyajit"
+        }
       ],
-      "arxiv": "2512.05031",
-      "inspire": "https://inspirehep.net/literature/3089338"
+      "doi": "10.1007/978-981-95-1513-4_93",
+      "inspire": "https://inspirehep.net/literature/3116699"
     },
     {
       "date": "2025-12-04",
       "title": "Amortized Inference of Multi-Modal Posteriors using Likelihood-Weighted Normalizing Flows",
-      "venue": "arXiv preprint (2025)",
+      "venue": "Preprint",
       "type": "Preprint",
       "authors": [
-        {"full_name": "Rajneil Baruah"}
+        {
+          "full_name": "Baruah, Rajneil"
+        }
       ],
       "arxiv": "2512.04954",
       "inspire": "https://inspirehep.net/literature/3089299"
     },
     {
-      "date": "2025-07-30",
+      "date": "2025-12-04",
+      "title": "CNN on `Top': In Search of Scalable & Lightweight Image-based Jet Taggers",
+      "venue": "Preprint",
+      "type": "Preprint",
+      "authors": [
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Patra, Sunando Kumar"
+        },
+        {
+          "full_name": "Roy, Satyajit"
+        }
+      ],
+      "arxiv": "2512.05031",
+      "inspire": "https://inspirehep.net/literature/3089396"
+    },
+    {
+      "date": "2025-01-27",
       "title": "Normalizing flow-assisted nested sampling on Type-II Seesaw model",
-      "venue": "Eur. Phys. J. C 85, 816 (2025)",
+      "venue": "Eur.Phys.J.C 85 816 (2025)",
       "type": "Journal article",
       "authors": [
-        {"full_name": "Rajneil Baruah"},
-        {"full_name": "Subhadeep Mondal"},
-        {"full_name": "Sunando Kumar Patra"},
-        {"full_name": "Satyajit Roy"}
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Patra, Sunando Kumar"
+        },
+        {
+          "full_name": "Roy, Satyajit"
+        }
       ],
       "doi": "10.1140/epjc/s10052-025-14502-5",
       "arxiv": "2501.16432",
-      "inspire": "https://inspirehep.net/literature/2864026"
+      "inspire": "https://inspirehep.net/literature/2873396"
     },
     {
-      "date": "2025-05-01",
-      "title": "Probing sub-TeV Higgsinos aided by a machine-learning-based top tagger in the context of trilinear R-parity violating SUSY",
-      "venue": "Phys. Rev. D 111, 095004 (2025)",
+      "date": "2025-01-04",
+      "title": "Cosmological behavior of a hyperbolic solution in f(Q) gravity",
+      "venue": "Astron.Comput. 51 100926 (2025)",
       "type": "Journal article",
       "authors": [
-        {"full_name": "Rajneil Baruah"},
-        {"full_name": "Arghya Choudhury"},
-        {"full_name": "Kirtiman Ghosh"},
-        {"full_name": "Subhadeep Mondal"},
-        {"full_name": "Rameswar Sahu"}
+        {
+          "full_name": "Haloi, K."
+        },
+        {
+          "full_name": "Roy Baruah, R."
+        }
+      ],
+      "doi": "10.1016/j.ascom.2024.100926",
+      "inspire": "https://inspirehep.net/literature/2868591"
+    },
+    {
+      "date": "2024-12-16",
+      "title": "Probing sub-TeV Higgsinos aided by a machine-learning-based top tagger in the context of trilinear <math display=\"inline\"><mi>R</mi></math>-parity violating SUSY",
+      "venue": "Phys.Rev.D 111 9 (2025)",
+      "type": "Journal article",
+      "authors": [
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Choudhury, Arghya"
+        },
+        {
+          "full_name": "Ghosh, Kirtiman"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Sahu, Rameswar"
+        }
       ],
       "doi": "10.1103/PhysRevD.111.095004",
       "arxiv": "2412.11862",
       "inspire": "https://inspirehep.net/literature/2859985"
     },
     {
-      "date": "2024-07-01",
+      "date": "2024-04-03",
       "title": "Probing intractable beyond-standard-model parameter spaces armed with machine learning",
-      "venue": "Eur. Phys. J. Spec. Top. 233, 2597-2618 (2024)",
+      "venue": "Eur.Phys.J.ST 233 2597 (2024)",
       "type": "Journal article",
       "authors": [
-        {"full_name": "Rajneil Baruah"},
-        {"full_name": "Subhadeep Mondal"},
-        {"full_name": "Sunando Kumar Patra"},
-        {"full_name": "Satyajit Roy"}
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Patra, Sunando Kumar"
+        },
+        {
+          "full_name": "Roy, Satyajit"
+        }
       ],
       "doi": "10.1140/epjs/s11734-024-01236-w",
-      "arxiv": "2404.02698"
+      "arxiv": "2404.02698",
+      "inspire": "https://inspirehep.net/literature/2773819"
+    },
+    {
+      "date": "2024-02-21",
+      "title": "Scenario of FLRW Dark Energy Universe and f(Q) Gravity",
+      "venue": "Astron.Comput. 47 100805 (2024)",
+      "type": "Journal article",
+      "authors": [
+        {
+          "full_name": "Haloi, K."
+        },
+        {
+          "full_name": "Roy Baruah, R."
+        }
+      ],
+      "doi": "10.1016/j.ascom.2024.100805",
+      "inspire": "https://inspirehep.net/literature/2766020"
+    },
+    {
+      "date": "2023-11-03",
+      "title": "The dynamics of a hyperbolic solution in <math altimg=\"si12.svg\" display=\"inline\" id=\"d1e778\"><mrow><mi>f</mi><mrow><mo>(</mo><mi>R</mi><mo>,</mo><mi>G</mi><mo>)</mo></mrow></mrow></math> gravity",
+      "venue": "Astron.Comput. 45 100761 (2023)",
+      "type": "Journal article",
+      "authors": [
+        {
+          "full_name": "Rabha, D."
+        },
+        {
+          "full_name": "Baruah, R. Roy"
+        }
+      ],
+      "doi": "10.1016/j.ascom.2023.100761",
+      "inspire": "https://inspirehep.net/literature/2719110"
     }
   ]
 }
