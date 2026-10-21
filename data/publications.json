@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-10-20T20:33:48.634360+00:00",
+  "generated_at": "2026-10-21T10:05:56.498874+00:00",
   "source": "INSPIRE-HEP",
   "query": "a Baruah, Rajneil",
   "publications": [
+    {
+      "date": "2026-10-19",
+      "title": "This is SParTA: A modular, efficient and scalable transformer architecture for jet-tagging",
+      "venue": "Preprint",
+      "type": "Preprint",
+      "authors": [
+        {
+          "full_name": "Baruah, Rajneil"
+        },
+        {
+          "full_name": "Mondal, Subhadeep"
+        },
+        {
+          "full_name": "Patra, Sunando Kumar"
+        },
+        {
+          "full_name": "Roy, Satyajit"
+        }
+      ],
+      "arxiv": "2610.27106",
+      "inspire": "https://inspirehep.net/literature/3216611"
+    },
     {
       "date": "2026-02-03",
       "title": "Probing Sub-teV Higgsinos in a Trilinear RPV SUSY Scenario Using GNN-Based Boosted Top Tagger",
