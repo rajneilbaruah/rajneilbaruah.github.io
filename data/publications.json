@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T21:45:42.432903+00:00",
+  "generated_at": "2026-11-16T13:36:22.951257+00:00",
   "source": "INSPIRE-HEP",
   "query": "a Baruah, Rajneil",
   "publications": [
@@ -109,9 +109,9 @@
     },
     {
       "date": "2025-12-04",
-      "title": "CNN on `Top': In Search of Scalable & Lightweight Image-based Jet Taggers",
-      "venue": "Preprint",
-      "type": "Preprint",
+      "title": "CNN on 'Top'",
+      "venue": "Eur.Phys.J.C 86 1309 (2026)",
+      "type": "Journal article",
       "authors": [
         {
           "full_name": "Baruah, Rajneil"
@@ -126,6 +126,7 @@
           "full_name": "Roy, Satyajit"
         }
       ],
+      "doi": "10.1140/epjc/s10052-026-16515-0",
       "arxiv": "2512.05031",
       "inspire": "https://inspirehep.net/literature/3089396"
     },
